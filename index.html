@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Template CDN</title>
+    <style type="text/tailwindcss">
+        .container {
+            @apply max-[1920px]:max-w-[1200px]
+        }
+    </style>
+</head>
+<body class="font-sf">
+    <!-- Шапка -->
+    <header class="bg-[url('assets/img/bg/bg1.png')] bg-no-repeat bg-center bg-cover min-h-[1100px] relative flex flex-col">
+        <nav class="absolute container xl:left-[calc((100%-1200px)/2)] pr-10 xl:pr-0 flex items-center justify-between py-20 font-mono">
+            <div class="hidden text-white absolute py-[100px] bg-black h-screen top-0 flex flex-col items-center text-center -translate-x-1/2 left-1/2 w-full z-40" id="menu">
+                <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">О НАС</a>
+                <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">ДОП. УСЛУГИ</a>
+                <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">ГАРАНТИИ</a>
+                <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">НОВОСТИ</a>
+            </div>
+            <div class="flex items-center justify-center h-full w-[52px] rounded-md lg:hidden cursor-pointer z-50" id="openMenu">
+                <img src="assets/img/icon/menu.svg" alt="">
+            </div>
+            <ul class="lg:flex items-center gap-7 text-lg uppercase hidden">
+                <li><a href="#" class="text-[#CB0E0E]">О НАС</a></li>
+                <li><a href="#" class="text-white">СТОИМОСТЬ</a></li>
+                <li><a href="#" class="text-white">ДОП. УСЛУГИ</a></li>
+                <li><a href="#" class="text-white">ГАРАНТИИ</a></li>
+                <li><a href="#" class="text-white">НОВОСТИ</a></li> 
+            </ul>
+            <div class="flex items-center md:gap-6 gap-2 lg:pr-[134px]">
+                <a href="tel:080000000000" class="text-white md:text-2xl text-base">0 800 000 000 00</a>
+                <a href="#"><img src="assets/img/icon/menu.png" alt=""></a>
+            </div>
+        </nav>
+
+        <section class="container mx-auto flex lg:flex-row justify-between my-auto">
+            <div class="flex flex-col lg:w-1/2 w-full items-center lg:items-start">
+                <h1 class="text-white text-center uppercase leading-10 font-space select-none flex flex-col md:mb-12 mb-4">
+                    <span class="md:text-[60px] text-[32px]">космический</span>
+                    <span class="md:text-[110px] text-[58px] h-fit">туризм</span>
+                </h1>
+                <div class="flex md:flex-row flex-col justify-between md:gap-10 gap-2 text-white text-2xl whitespace-nowrap">
+                    <p>Будущее уже наступило!</p>
+                    <p>Осуществи мечту детства!</p>
+                </div>
+                <a href="#" class="flex justify-center items-center text-center w-full md:text-2xl text-lg border text-white border-white py-4 mt-10 uppercase">Хочу быть космонавтом!</a>
+            </div>
+        </section>
+
+        <div class="absolute xl:right-[calc((100%-1200px)/2)] right-0 pr-5 md:pr-10 xl:pr-0 pl-5 md:pl-0 bottom-[142px] md:w-[381px] w-full flex justify-between md:gap-[52px] gap-6 text-sm text-white">
+            <p class="w-1/2">
+                В 2021 году наступила новая эра в освоении космоса - эра космического туризма. Частные компании получили доступ к 
+                космическому пространству. 
+            </p>
+            <p class="w-1/2">
+                Между ними обострилась конкуренция, а цена билета на полеты в космическое пространство снизилась в сто раз.
+            </p>
+        </div>
+    </header>
+
+    <!-- Программы -->
+    <div class="bg-[url('assets/img/bg/bg2.png')] bg-no-repeat bg-center bg-cover h-fit md:py-[100px] py-[50px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col">
+                <h2 class="font-space md:text-5xl text-2xl text-white mb-[100px]">
+                    О нас
+                </h2>
+                <section class="flex md:flex-row flex-col justify-between gap-[99px]">
+                    <div class="flex md:w-[41.7%] w-full">
+                        <img src="assets/img/photo/VG.png" alt="" class="w-full object-cover">
+                    </div>
+                    <div class="flex flex-col md:w-[50%] w-full">
+                        <h3 class="text-[30px] font-bold text-white">Virgin Galactic</h3>
+                        <p class="text-xs text-[#036CCA] mb-7">суборбитальный полет</p>
+                        <div class="grid lg:grid-cols-3 gap-[53px] text-white">
+                            <div class="leading-5">
+                                Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический" суборбитальный полет со 
+                                своим основателем, британским миллиардером Ричардом Брэнсоном на борту.
+                            </div>
+                            <div class="leading-5">
+                                Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью 
+                                самолета-носителя VMS Eve. Позже он отсоединился от самолета-носителя.
+                            </div>
+                            <div class="leading-5">
+                                Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты начнутся до 2022 года. 
+                            </div>
+                        </div>
+                        <table class="text-white mt-12 mb-5">
+                            <thead class="border-t border-b border-white lg:flex hidden">
+                                <tr class="w-full flex">
+                                    <th class="py-3 lg:w-1/5">время в пути</th>
+                                    <th class="py-3 lg:w-1/5">расстояние</th>
+                                    <th class="py-3 lg:w-1/5">в невесомости</th>
+                                    <th class="py-3 lg:w-1/5">стоимость</th>
+                                    <th class="py-3 lg:w-1/5">вернешься?</th>
+                                </tr>
+                            </thead>
+                            <tbody class="lg:border-b border-white">
+                                <tr class="flex flex-col lg:flex-row w-full">
+                                    <td aria-label="время в пути" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">10</span>
+                                            <span class="text-sm font-bold">мин</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="расстояние" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">100</span>
+                                            <span class="text-sm font-bold">км</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="в невесомости" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">4-5</span>
+                                            <span class="text-sm font-bold">мин</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="стоимость" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">250</span>
+                                            <span class="text-sm font-bold">тыс.дол</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="вернешься?" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">99</span>
+                                            <span class="text-sm font-bold">%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="text-white py-5 px-10 border border-white w-fit">ЗАБРОНИРОВАТЬ ПОЛЕТ</a>
+                    </div>
+                </section>
+
+                <section class="flex md:flex-row flex-col justify-between gap-[99px] py-[50px] lg:py-[100px]">
+                    <div class="flex flex-col md:w-[50%] w-full md:order-1 order-2">
+                        <h3 class="text-[30px] font-bold text-white">Blue Origin</h3>
+                        <p class="text-xs text-[#036CCA] mb-7">суборбитальный полет</p>
+                        <div class="grid lg:grid-cols-3 gap-[53px] text-white">
+                            <div class="leading-5">
+                                Суборбитальные ракета New Shepard компании Blue Origin 20 июля 2021года впервые в истории компании вывела 
+                                на космическую высоту капсулу с людьми, с самым богатым человеком мира Джеффом  Безосом на борту.
+                            </div>
+                            <div class="leading-5">
+                                New Shepard высотой 18 м и шириной 4 м - многоразовый космический аппарат. Бустерная установка поднимает 
+                                герметичное пассажирское судно на высоту около 76 км. Импульс преподносит капсулу вверх в космос. 
+                            </div>
+                            <div class="leading-5">
+                                После этого она опускается на землю под тремя парашютами. Ракета-носитель тоже возвращается домой.
+                            </div>
+                        </div>
+                        <table class="text-white mt-12 mb-5">
+                            <thead class="border-t border-b border-white lg:flex hidden">
+                                <tr class="w-full flex">
+                                    <th class="py-3 lg:w-1/5">время в пути</th>
+                                    <th class="py-3 lg:w-1/5">расстояние</th>
+                                    <th class="py-3 lg:w-1/5">в невесомости</th>
+                                    <th class="py-3 lg:w-1/5">стоимость</th>
+                                    <th class="py-3 lg:w-1/5">вернешься?</th>
+                                </tr>
+                            </thead>
+                            <tbody class="lg:border-b border-white">
+                                <tr class="flex flex-col lg:flex-row w-full">
+                                    <td aria-label="время в пути" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">10</span>
+                                            <span class="text-sm font-bold">мин</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="расстояние" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">100</span>
+                                            <span class="text-sm font-bold">км</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="в невесомости" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">4-5</span>
+                                            <span class="text-sm font-bold">мин</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="стоимость" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">250</span>
+                                            <span class="text-sm font-bold">тыс.дол</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="вернешься?" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">99</span>
+                                            <span class="text-sm font-bold">%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="text-white py-5 px-10 border border-white w-fit">ЗАБРОНИРОВАТЬ ПОЛЕТ</a>
+                    </div>
+                    <div class="flex md:w-[41.7%] w-full md:order-2 order-1">
+                        <img src="assets/img/photo/blue.png" alt="" class="w-full object-cover">
+                    </div>
+                </section>
+
+                <section class="flex md:flex-row flex-col justify-between gap-[99px]">
+                    <div class="flex md:w-[41.7%] w-full">
+                        <img src="assets/img/photo/spaceX.png" alt="" class="w-full object-cover">
+                    </div>
+                    <div class="flex flex-col md:w-[50%] w-full">
+                        <h3 class="text-[30px] font-bold text-white">SpaceX</h3>
+                        <p class="text-xs text-[#036CCA] mb-7">А может на Луну или Марс?</p>
+                        <div class="grid lg:grid-cols-3 gap-[53px] text-white">
+                            <div class="leading-5">
+                                В 2016 году на 67-м ежегодном Международном конгрессе астронавтики Илон Маск заявил, что оптимистичный 
+                                временной график предусматривает первый полет к Марсу в 2022 году (доставка груза).
+                            </div>
+                            <div class="leading-5">
+                                Полет с экипажем - в 2024 году.
+                                На Красную планету экипаж прибудет в 2025-26 году.
+                                "Я начал SpaceX, потому что хотел помочь снизить стоимость космических перевозок, чтобы основать жизни на другой планете".
+                            </div>
+                            <div class="leading-5">
+                                Если все пойдет по плану, то благодаря Маск к 2050 году жителями Красной планеты смогут себя назвать около 
+                                миллиона человек. Туда их доставит флотилия из тысячи кораблей Starship.
+                            </div>
+                        </div>
+                        <table class="text-white mt-12 mb-5">
+                            <thead class="border-t border-b border-white lg:flex hidden">
+                                <tr class="w-full flex">
+                                    <th class="py-3 lg:w-1/5">время в пути</th>
+                                    <th class="py-3 lg:w-1/5">расстояние</th>
+                                    <th class="py-3 lg:w-1/5">в невесомости</th>
+                                    <th class="py-3 lg:w-1/5">стоимость</th>
+                                    <th class="py-3 lg:w-1/5">вернешься?</th>
+                                </tr>
+                            </thead>
+                            <tbody class="lg:border-b border-white">
+                                <tr class="flex flex-col lg:flex-row w-full">
+                                    <td aria-label="время в пути" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">150</span>
+                                            <span class="text-sm font-bold">дней</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="расстояние" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">55</span>
+                                            <span class="text-sm font-bold">млн.км</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="в невесомости" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">много</span>
+                                            <span class="text-sm font-bold">мин</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="стоимость" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">10</span>
+                                            <span class="text-sm font-bold">млрд.дол</span>
+                                        </div>
+                                    </td>
+                                    <td aria-label="вернешься?" class="lg:w-1/5 w-full px-2 border-b-[1px] border-white lg:border-0 flex items-center justify-between lg:justify-center gap-5 lg:gap-0 before:content-[attr(aria-label)] lg:before:content-none lg:before:before:float-none before:float-left before:w-[105px] lg:before:w-fit">
+                                        <div class="flex flex-col items-center w-16">
+                                            <span class="text-4xl font-bold">1</span>
+                                            <span class="text-sm font-bold">%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="text-white py-5 px-10 border border-white w-fit">ЗАБРОНИРОВАТЬ ПОЛЕТ</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Порядок действий -->
+    <section class="bg-[url('assets/img/bg/bg3.png')] bg-no-repeat bg-center bg-cover h-full md:py-[100px] py-[50px]">
+        <div class="container mx-auto flex flex-col">
+            <h2 class="font-space md:text-5xl text-2xl text-white mb-[100px]">
+                Как все <span class="block">происходит</span> 
+            </h2>
+            <div class="xl:ml-[180px]">
+                <ul class="flex flex-col gap-5 xl:gap-0 text-white text-lg relative after:h-[calc(100%-20px)] xl:after:h-fit after:w-[1px] after:bg-white after:absolute after:top-2 after:left-[10px]">
+                    <li class="flex items-center gap-4 xl:mb-14 relative xl:after:absolute xl:after:w-[165px] xl:after:h-[1px] xl:after:bg-white xl:after:top-[50px] xl:after:-left-2 xl:after:rotate-[30deg]"><div class="z-50 w-5 h-5 bg-white rounded-full"></div>Выбираете программу</li>
+                    <li class="flex items-center gap-4 xl:ml-[142px] xl:mb-[60px] xl:relative xl:after:absolute xl:after:w-[78px] xl:after:h-[1px] xl:after:bg-white xl:after:top-[70px] xl:after:left-2 xl:after:rotate-[65deg] text-[#036CCA]"><div class="w-10 h-10 bg-[#036CCA] rounded-full z-50 -translate-x-[10px]"></div>Оплачиваете</li>
+                    <li class="flex items-center gap-4 xl:ml-[200px] xl:mb-[50px] xl:relative xl:after:absolute xl:after:w-[92px] xl:after:h-[1px] xl:after:bg-white xl:after:top-[50px] xl:after:left-0 xl:after:rotate-[48deg]"><div class="z-50 w-5 h-5 bg-white rounded-full"></div>Какая-то будет подготовка</li>
+                    <li class="flex items-center gap-4 xl:ml-[274px] xl:mb-[66px] xl:relative xl:after:absolute xl:after:w-[340px] xl:after:h-[1px] xl:after:bg-white xl:after:top-[120px] xl:after:-left-8 xl:after:rotate-[40deg]"><div class="z-50 w-5 h-5 bg-white rounded-full"></div>Садимся. Летим. Невесомость</li>
+                    <li class="flex items-center gap-4 xl:ml-[80px] xl:mb-[10px] xl:relative xl:after:absolute xl:after:w-[300px] xl:after:h-[1px] xl:after:bg-white xl:after:top-[150px] xl:after:left-[70px] xl:after:rotate-[44deg] xl:before:absolute xl:before:w-[150px] xl:before:h-[1px] xl:before:bg-white xl:before:-top-[20px] xl:before:left-[85px] xl:before:rotate-[128deg]"><div class="z-50 w-5 h-5 bg-white rounded-full xl:order-2 order-1"></div><span class="xl:order-1 order-2 xl:text-end">Делаем <span class="xl:block">фото в</span><span class="xl:block">инстаграм</span></span></li>
+                    <li class="flex items-center gap-4 xl:ml-[538px] xl:mb-[60px]"><div class="z-50 w-5 h-5 bg-white rounded-full"></div><span class="xl:w-2/3 w-full">Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое, обычное)</span></li>
+                    <li class="flex items-center gap-4 xl:ml-[400px] xl:relative xl:after:absolute xl:after:w-[180px] xl:after:h-[1px] xl:after:bg-white xl:after:-top-[50px] xl:after:-left-[3px] xl:after:rotate-[140deg]"><div class="z-50 w-5 h-5 bg-white rounded-full"></div>Приземляемся, но это не точно</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронь -->
+    <section class="bg-[url('assets/img/bg/bg4.png')] bg-no-repeat bg-cover h-[914px] md:py-[100px] py-[50px]">
+        <div class="container mx-auto flex justify-between relative h-full">
+            <h2 class="font-space md:text-5xl text-2xl text-white lg:mb-[100px]">
+                Успей <span class="block">забронировать!</span>  
+            </h2>
+            <div class="lg:w-[381px] w-fit absolute lg:relative pr-5 lg:pr-0 bottom-0 flex lg:flex-row flex-col justify-between gap-[52px] text-sm text-white">
+                <p class="lg:w-1/2 w-fit">
+                    Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты начнутся до 2022 года. 
+                    Компания уже несколько лет продает билеты на такие полеты по 250 тыс долл.
+                </p>
+                <p class="lg:w-1/2 w-fit">
+                    Virgin Galactic получила задатков более чем 80 млн долл, а количество желающих превышает 600 человек.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <div class="bg-[url('assets/img/bg/bg5.png')] bg-no-repeat bg-center bg-cover h-fit md:py-[100px] py-[50px]">
+        <div class="container mx-auto">
+            <h2 class="font-space md:text-5xl text-2xl text-white md:mb-[100px] mb-[50px]">
+                Спец <span class="block">предложения</span>  
+            </h2>
+            <!-- Спец.предложения -->
+            <section class="flex lg:flex-row flex-col lg:gap-0 gap-10 justify-between xl:gap-[100px] mb-[142px]">
+                <div class="flex flex-col gap-6 lg:w-[41.7%] w-full">
+                    <div class="flex flex-col items-center min-h-[400px] border border-white py-10 xl:px-[132px] text-white">
+                        <p class="text-2xl text-center">Забронируй полет 
+                            <span class="text-[#CB0E0E] block">прямо сейчас</span>  
+                            и получи скидку 
+                            1000$
+                        </p>
+                        <div class="mt-auto relative">
+                            <p class="text-5xl">249 000 $</p>
+                            <div class="absolute -top-1/2 xl:-right-[30%] md:-right-[15%] -right-[5%]">
+                                <div class="relative">
+                                    <p class="text-sm">250 000 $</p>
+                                    <div class="absolute bg-[#CB0E0E] w-16 h-[1px] top-2 rotate-[20deg]">&nbsp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="flex justify-center py-5 w-full border border-white text-lg text-white">
+                        ЗАБРОНИРОВАТЬ ПОЛЕТ
+                    </a>
+                </div>
+                <div class="flex flex-col gap-6 lg:w-[41.7%] w-full">
+                    <div class="flex flex-col items-center min-h-[400px] border border-white py-10 xl:px-[132px] text-white">
+                        <p class="text-2xl text-center">
+                            Приведи друга и получи <span class="text-[#CB0E0E]">скидку 10%</span> 
+                            <span class="block">на следующий полет,</span> если вернешься
+                        </p>
+                        <div class="mt-auto relative">
+                            <p class="text-5xl">225 000 $</p>
+                            <div class="absolute -top-1/2 xl:-right-[30%] md:-right-[15%] -right-[5%]">
+                                <div class="relative">
+                                    <p class="text-sm">250 000 $</p>
+                                    <div class="absolute bg-[#CB0E0E] w-16 h-[1px] top-2 rotate-[20deg]">&nbsp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="flex justify-center py-5 w-full border border-white text-lg text-white">
+                        ЗАБРОНИРОВАТЬ ПОЛЕТ
+                    </a>
+                </div>
+            </section>
+
+            <!-- Доп.услуги -->
+            <section class="flex flex-col md:mb-[200px] mb-[100px]">
+                <h2 class="font-space md:text-5xl text-2xl text-white md:mb-[100px] mb-[50px]">
+                    Дополнительные <span class="block">услуги</span>  
+                </h2>
+                <div class="flex md:flex-row flex-col gap-32 md:gap-0 justify-between">
+                    <div class="flex md:w-1/2 w-full">
+                        <div class="flex flex-col gap-6 text-white">
+                            <p class="text-2xl">С Вами полетит профессиональный фотограф</p>
+                            <ul class="text-2xl">
+                                <li class="flex items-center gap-4"><div class="min-w-[20px] min-h-[20px] bg-white rounded-full"></div> 20 фотографий в профессиональной обработке</li>
+                                <li class="flex items-center gap-4"><div class="min-w-[20px] min-h-[20px] bg-white rounded-full"></div>фото кинга</li>
+                                <li class="flex items-center gap-4"><div class="min-w-[20px] min-h-[20px] bg-white rounded-full"></div>магнит на холодильник в подарок</li>
+                            </ul>
+                            <p class="text-xs text-[#E5E5E5]">Стоимость фотосессии в невесомости 100 000 $.Доплати 50 000 $ и получи все фото в цветокоррекции на диске.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-[41.7%] w-full mt-auto">
+                        <div class="flex flex-col md:gap-12 gap-6 relative">
+                            <img src="assets/img/icon/services.png" alt="" class="absolute right-0 -top-32">
+                            <a href="#" class="flex justify-center py-5 w-full border border-white text-lg text-white">
+                                КУПИТЬ УСЛУГИ ФОТОГРАФА
+                            </a>
+                            <a href="#" class="flex justify-center py-5 w-full border border-white text-lg text-white">
+                                ХОЧУ И ДИСК
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Слайдер -->
+            <section class="md:border border-white lg:py-[100px] lg:px-[200px] md:py-[50px] md:px-[100px] py-0 px-0 relative">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/photo/slider.png" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/photo/slider.png" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/photo/slider.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev after:content-none top-[110%] md:top-1/2 lg:w-[100px] w-[50px] absolute lg:left-[75px] left-[35px]">
+                    <img src="assets/img/icon/arrowPrev.png" alt="">
+                </div>
+                <div class="swiper-button-next after:content-none top-[110%] md:top-1/2 lg:w-[100px] w-[50px] absolute lg:right-[75px] right-[35px]">
+                    <img src="assets/img/icon/arrowNext.png" alt="">
+                </div>
+            </section>
+            <p class="lg:text-2xl text-lg text-white font-space md:px-10 px-0 text-center lg:mt-12 mt-6">Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.</p>
+        </div>
+    </div>
+
+    <!-- Форма -->
+    <section class="bg-black md:py-[100px] py-[50px]">
+        <div class="container mx-auto flex flex-col justify-between">
+            <div class="flex sm:flex-row flex-col justify-between">
+                <div class="flex flex-col md:w-[41.6%] w-full mb-3 md:mb-0">
+                    <h2 class="font-space md:text-5xl text-2xl text-white md:mb-12 mb-6">
+                        Контакты
+                    </h2>
+                    <p class="md:text-2xl text-lg text-white w-11/12">Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!</p>
+                </div>
+                <div class="flex flex-col md:w-1/2 w-full">
+                    <h2 class="font-space md:text-5xl text-2xl text-white md:mb-12 mb-6">
+                        Гарантии
+                    </h2>
+                    <p class="md:text-2xl text-lg text-white">Ни одна моя ракета еще не сделала удачную попытку, 
+                        потому что в ней не было тебя!
+                        Будь первым! Колонизируй Марс!
+                        Илон Маск
+                    </p>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col justify-between">
+                <div class="flex flex-col md:w-[41.6%] w-full">
+                    <form action="#" class="flex flex-col md:gap-7 gap-3">
+                        <input type="text" placeholder="ФИО" class="py-5 text-white text-sm border-b bg-transparent border-white outline-0 w-full">
+                        <input type="text" placeholder="Имя ребенка или внука (на всякий случай)" class="py-5 text-white text-sm border-b bg-transparent border-white outline-0 w-full">
+                        <input type="text" placeholder="Телефон" class="py-5 text-white text-sm border-b bg-transparent border-white outline-0 w-full">
+                        <button type="submit" class="flex items-center justify-center py-5 w-full border border-white text-white text-lg md:mt-10 mt-5">ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+                    </form>
+                </div>
+                <div class="flex flex-col md:w-1/2 w-full mt-5 md:mt-0">
+                    <img src="assets/img/photo/Elon.png" alt="" class="flex md:self-end self-center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-[url('assets/img/bg/bg7.png')] bg-no-repeat bg-center bg-cover h-fit md:pt-[100px] pt-[50px] lg:pb-[150px] pb-[75px]">
+        <div class="container mx-auto">
+            <div class="flex justify-end ">
+                <div class="grid md:grid-cols-3 grid-cols-2 lg:gap-12 gap-8 md:w-2/3">
+                    <div class="flex flex-col justify-between text-white h-full lg:text-base md:text-sm text-xs">
+                        <p class="">Служба поддержки работает межгалактично и суборбитально</p>
+                        <p class="">График приема посетителей строго по записи</p>
+                    </div>
+                    <div class="flex flex-col text-white gap-5 lg:text-base md:text-sm text-xs">
+                        <a href="#">О НАС </a>
+                        <a href="#">СТОИМОСТЬ</a>
+                        <a href="#">ДОП. УСЛУГИ</a>
+                        <a href="#">ГАРАНТИИ</a>
+                        <a href="#">НОВОСТИ</a>
+                    </div>
+                    <div class="flex flex-col text-white gap-5 lg:text-base md:text-sm text-xs">
+                        <a href="#" class="uppercase">spacex.com</a>
+                        <a href="#" class="uppercase">blueorigin.com</a>
+                        <a href="#" class="uppercase">virgingalactic.com</a>
+                        <a href="#" class="text-[#CB0E0E]">0 800 000 000 00</a>
+                        <a href="#">МКС</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="assets/libs/jquery.js"></script>
+<script src="assets/libs/swiper.js"></script>
+<script src="assets/libs/tailwindElements.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tailwind.js"></script>
+</body>
+</html>

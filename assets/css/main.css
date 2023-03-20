@@ -1,0 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/space-age-cyrillic');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('swiper.css');
+@import url('tailwindElements.css');
+
+
+.font-space {
+    font-family: 'Space Age Cyrillic', sans-serif;
+}
+.font-sf {
+    font-family: 'SF Pro Display', sans-serif;
+}
